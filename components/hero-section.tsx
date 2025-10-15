@@ -1,6 +1,8 @@
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
+"use client";
+
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 export function HeroSection() {
   return (
@@ -28,17 +30,18 @@ export function HeroSection() {
           economic challenges
         </p>
 
-<div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-  <a href="#about">
-    <Button
-      size="lg"
-      className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-semibold px-8 flex items-center transition-all duration-300"
-    >
-      Learn More About UMES
-      <ArrowRight className="ml-2 h-5 w-5 transform transition-transform duration-300 hover:translate-x-1" />
-    </Button>
-  </a>
-</div>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+          <a href="#about">
+            <Button
+              size="lg"
+              className="bg-secondary hover:bg-secondary/90 text-secondary-foreground font-semibold px-8 flex items-center transition-all duration-300"
+            >
+              Learn More About UMES
+              <ArrowRight className="ml-2 h-5 w-5 transform transition-transform duration-300 hover:translate-x-1" />
+            </Button>
+          </a>
+        </div>
+      </div>
     </section>
-  )
+  );
 }
